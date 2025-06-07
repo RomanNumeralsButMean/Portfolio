@@ -1,18 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Romain Missoum</title>
+    <style>
+        /* Style de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #1e1e1e;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .header-content h1 {
+            font-size: 2.5em;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-size: 1.2em;
+            margin: 2px 0;
+        }
+
+        .header-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ffcc00;
+            object-fit: cover;
+        }
+
+        #projects, #skills, #education, #contact {
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .project, .skill, .education {
+            background-color: #2a2a2a;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1e1e1e;
+            margin-top: 50px;
+        }
+
+        .about-section {
+            margin-top: 50px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 250px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <div class="container">
-        <h1>Missoum Romain</h1>
-        <p>19</p>
-        <p>Étudiant en informatique</p>
+    <div class="container header-content">
+        <img src="profile.jpg" alt="Photo de Romain Missoum" class="header-photo" />
+        <div>
+            <h1>Missoum Romain</h1>
+            <p>19 ans</p>
+            <p>Étudiant en informatique</p>
+        </div>
     </div>
 </header>
 
@@ -22,21 +127,15 @@
         <div class="about-text">
             <p>Bonjour, je suis passionné par le développement d'applications.</p>
         </div>
-        <div class="about-photo">
-            <img src="profile.jpg" alt="Nom Prénom">
-        </div>
     </div>
 </section>
 
-
 <section id="projects" class="container">
     <h2>Projets</h2>
-    <!-- Projets à compléter -->
     <div class="project">
-        <h3>Nom du projet</h3>
-        <p>Courte description du projet.</p>
-        <p><strong>Compétences utilisées :</strong> HTML, CSS, JavaScript.</p>
-        <a href="lien_github" target="_blank">Voir le projet sur GitHub</a>
+        <h3>Installation d'une machine virtuelle Debian 12</h3>
+        <p>Création d’un tutoriel en anglais pour guider l’installation d’une machine virtuelle Debian 12.</p>
+        <p><strong>Compétences utilisées :</strong> Identifier les composants matériels et logiciels, Installer et configurer un système d’exploitation, Rédiger une documentation technique en anglais.</p>
     </div>
 </section>
 
@@ -54,24 +153,30 @@
         <h3>Base de données</h3>
         <p>PostgreSQL, MySQL</p>
     </div>
+    <div class="skill">
+        <h3>Administration Système</h3>
+        <p>Identifier les composants matériels et logiciels, Installer et configurer un système d’exploitation</p>
+    </div>
+    <div class="skill">
+        <h3>Rédaction technique</h3>
+        <p>Rédiger une documentation technique en anglais</p>
+    </div>
 </section>
 
 <section id="education" class="container">
     <h2>Parcours</h2>
     <div class="education">
         <h3>Baccalauréat spécialité Maths et NSI</h3>
-        <p>Établissement : [Nom de l'établissement]</p>
     </div>
 </section>
 
 <section id="contact" class="container">
     <h2>Contact</h2>
-    <p>GitHub : <a href="lien_github" target="_blank">GitHub</a></p>
-    <p>LinkedIn : <a href="lien_linkedin" target="_blank">LinkedIn</a></p>
+    <p><a href="https://fr.linkedin.com/in/romain-missoum-9ba32a339">LinkedIn</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Nom Prénom. Tous droits réservés.</p>
+    <p>&copy; 2025 Romain Missoum. Tous droits réservés.</p>
 </footer>
 
 </body>
