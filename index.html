@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mon Portfolio - Romain Missoum</title>
+    <style>
+        /* PATCH DIRECT POUR LE HEADER */
+        header {
+            background: linear-gradient(.25turn, #3e3e3e, #2c2c2c);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: linear-gradient(to right, #00000000, #0111ff, #00000000);
+            padding: 10px 0;
+        }
+
+        header nav a {
+            color: #f5f5dc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #a7c957;
+        }
+
+        body {
+            padding-top: 120px; /* compense le header fixe */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="container">
+        <h2>À propos de moi</h2>
+        <p>Bonjour, je m'appelle Romain Missoum. Je suis étudiant en informatique passionné par le développement d'applications et de sites web. Mon objectif est de renforcer mes compétences en développement logiciel et de participer à des projets innovants.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+        <h2>Projets</h2>
+        <details class="project">
+            <summary><h3>Installation d'une machine virtuelle Debian 12</h3></summary>
+            <p>Travail seul. Mise en place d'une machine virtuelle Debian 12 avec services Apache2, PostgreSQL, PHP et PhpPgAdmin. Configuration du serveur pour un accès distant via SSH et PSQL, installation et test d'un environnement web complet.</p>
+            <p><strong>Compétences démontrées :</strong> Administration système, Linux, réseau, PostgreSQL, Apache, PHP, SSH.</p>
+        </details>
+    </section>
+
+    <section id="skills" class="container skills">
+        <h2>Compétences</h2>
+        <div class="skill">
+            <h3>Développement Web</h3>
+            <p>HTML, CSS, JavaScript, React, Node.js</p>
+        </div>
+        <div class="skill">
+            <h3>Base de données</h3>
+            <p>PostgreSQL, MySQL</p>
+        </div>
+        <div class="skill">
+            <h3>Développement d'applications</h3>
+            <p>Python, Java</p>
+        </div>
+    </section>
+
+    <section id="parcours" class="container">
+        <h2>Parcours</h2>
+        <article class="parcours">
+            <h3>2023 - Aujourd'hui : Licence Informatique</h3>
+            <p>Université Grenoble Alpes – Programmation, algorithmique, systèmes, bases de données.</p>
+        </article>
+        <article class="parcours">
+            <h3>2021 - 2023 : BTS SIO (SLAM)</h3>
+            <p>Lycée Turgot – Développement web/mobile, gestion de bases de données, sécurité.</p>
+        </article>
+        <article class="parcours">
+            <h3>2020 : Baccalauréat STI2D</h3>
+            <p>Lycée Champollion – Spécialité Systèmes d’Information et Numérique.</p>
+        </article>
+    </section>
+
+    <section id="contact" class="container contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><strong>Email :</strong> romain.missoum@gmail.com</p>
+            <p><strong>LinkedIn :</strong> <a href="https://fr.linkedin.com/in/romain-missoum-9ba32a339" target="_blank">linkedin.com/in/romain-missoum</a></p>
+            <p><strong>GitHub :</strong> <a href="https://github.com/romain-missoum" target="_blank">github.com/romain-missoum</a></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Romain Missoum. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
